@@ -1,0 +1,11 @@
+store "kecepatan becak" to 0
+limit penumpang to = 4
+
+if  "becak" to tanpa penumpang
+    do speed "20 km/j"
+if  "becak" to > 2 penumpang
+    do speed "15 km/j"
+if  "becak" to 4 penumpang
+    do speed "13 km/j"
+
+display "kecepatan becak" 
