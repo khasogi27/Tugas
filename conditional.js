@@ -57,7 +57,7 @@ angkaKedua = 11
 // tugasDay5 //
 
 let day = 31; //1-31
-let month = 13; //1-12
+let month = 12; //1-12
 let years = 1997; //unlimited
 
 // code
@@ -93,4 +93,4 @@ switch(month){
   break;}
   default:{console.log(month='Input bulan Salah, harus antara 1 sampai 12'); return}
 }
-console.log(day,month,years)
+console.log(day+'-'+month+'-'+years)
