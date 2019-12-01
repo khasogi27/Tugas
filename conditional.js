@@ -1,4 +1,4 @@
-var angkaKedua  //undefined
+//var angkaKedua  //undefined
 
 angkaKedua = 10 // angkaKedua = 10
 // console.log("no 1.", angkaKedua !== "10" ) 
