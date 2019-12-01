@@ -56,17 +56,15 @@ angkaKedua = 11
 
 // tugasDay5 //
 
-let day = 32; //1-31
-let month = 10; //1-12
+let day = 31; //1-31
+let month = 13; //1-12
 let years = 1997; //unlimited
 
 // code
 
 if(day > 31 || day < 0){
   console.log("input tanggal salah harus antara 1 sampai 31");
-}
-else{
-  console.log("Input bulan Salah, harus antara 1 sampai 12")
+  return
 }
 switch(month){
   case 1:{(month='januari');
@@ -93,6 +91,6 @@ switch(month){
   break;}
   case 12:{(month='desember');
   break;}
-  default:{(month='ERROR')}
+  default:{console.log(month='Input bulan Salah, harus antara 1 sampai 12'); return}
 }
 console.log(day,month,years)
