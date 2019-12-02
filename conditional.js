@@ -1,10 +1,10 @@
 //var angkaKedua  //undefined
 
-angkaKedua = 10 // angkaKedua = 10
+// angkaKedua = 10 // angkaKedua = 10
 // console.log("no 1.", angkaKedua !== "10" ) 
 // angkaKedua = "angkaKedua"
 
-angkaKedua = 11
+// angkaKedua = 11
 // console.log("no 2.", angkaKedua === "angkaKedua" )
 // console.log((angkaKedua < 10 || angkaKedua >= 10) || (angkaKedua === 'angkaKedua' && angkaKedua>=10), '<=================== no 3  =================='); //true
 // (false || false) || (true && false) ---> false || false
