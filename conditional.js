@@ -2,7 +2,7 @@
 
 angkaKedua = 10 // angkaKedua = 10
 // console.log("no 1.", angkaKedua !== "10" ) 
-  // angkaKedua = "angkaKedua"
+// angkaKedua = "angkaKedua"
 
 angkaKedua = 11
 // console.log("no 2.", angkaKedua === "angkaKedua" )
@@ -57,40 +57,67 @@ angkaKedua = 11
 // tugasDay5 //
 
 let day = 31; //1-31
-let month = 12; //1-12
+let month = 13; //1-12
 let years = 1997; //unlimited
 
 // code
 
-if(day > 31 || day < 0){
+if (day > 31 || day < 0) {
   console.log("input tanggal salah harus antara 1 sampai 31");
   return
 }
-switch(month){
-  case 1:{(month='januari');
-  break;}
-  case 2:{(month='February');
-  break;}
-  case 3:{(month='maret');
-  break;}
-  case 4:{(month='april');
-  break;}
-  case 5:{(month='mei');
-  break;}
-  case 6:{(month='juni');
-  break;}
-  case 7:{(month='july');
-  break;}
-  case 8:{(month='agustus');
-  break;}
-  case 9:{(month='september');
-  break;}
-  case 10:{(month='oktober');
-  break;}
-  case 11:{(month='november');
-  break;}
-  case 12:{(month='desember');
-  break;}
-  default:{console.log(month='Input bulan Salah, harus antara 1 sampai 12'); return}
+switch (month) {
+  case 1: {
+    (month = 'januari');
+    break;
+  }
+  case 2: {
+    (month = 'February');
+    break;
+  }
+  case 3: {
+    (month = 'maret');
+    break;
+  }
+  case 4: {
+    (month = 'april');
+    break;
+  }
+  case 5: {
+    (month = 'mei');
+    break;
+  }
+  case 6: {
+    (month = 'juni');
+    break;
+  }
+  case 7: {
+    (month = 'july');
+    break;
+  }
+  case 8: {
+    (month = 'agustus');
+    break;
+  }
+  case 9: {
+    (month = 'september');
+    break;
+  }
+  case 10: {
+    (month = 'oktober');
+    break;
+  }
+  case 11: {
+    (month = 'november');
+    break;
+  }
+  case 12: {
+    (month = 'desember');
+    break;
+  }
+  default: {
+    console.log(month = 'Input bulan Salah, harus antara 1 sampai 12');
+    return
+  }
 }
-console.log(day+'-'+month+'-'+years)
+console.log(day + '-' + month + '-' + years)
