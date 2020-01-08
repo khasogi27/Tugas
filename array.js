@@ -34,7 +34,11 @@
 //     listp[i][j] [0][2]
 //   }
 
-var list = [[5,3,2,4,1,6], [1,2,2,3,4],[1,3,5,7,9]]
+var list = [
+  [5, 3, 2, 4, 1, 6],
+  [1, 2, 2, 3, 4],
+  [1, 3, 5, 7, 9]
+]
 var num = 0
 
 // pakai loop
@@ -44,14 +48,14 @@ var num = 0
 // function hanya menerima 1 parameter array 
 
 let countArray = () => {
-    for(i = 0; i < list.length; i++){
-        for(j = 0; j < list[i].length; j++){
-            if(list[i][j]%2==0){
-                num += list[i][j]
-            }
-        }
+  for (i = 0; i < list.length; i++) {
+    for (j = 0; j < list[i].length; j++) {
+      if (list[i][j] % 2 == 0) {
+        num += list[i][j]
+      }
     }
-    return num
+  }
+  return num
 }
 
 console.log(countArray(list))
@@ -89,7 +93,7 @@ console.log(countArray(list))
 
 //soal 1
 
-var animals = ['Lion', 'Tiger', [5,3,2,4,1,6], 'Jaguar', 'Puma']
+var animals = ['Lion', 'Tiger', [5, 3, 2, 4, 1, 6], 'Jaguar', 'Puma']
 
 
 //1. push nilai baru  // kalo console animals muncul sama nilai barunya
@@ -100,7 +104,14 @@ var animals = ['Lion', 'Tiger', [5,3,2,4,1,6], 'Jaguar', 'Puma']
 
 
 // soal 2
-var list = [[5,3,2,4,1,6], [1,2,2,3,4],[1,3,5,7,9],[1,3,5,7,9],[1,3,5,7,9],[1,3,5,7,2]]
+var list = [
+  [5, 3, 2, 4, 1, 6],
+  [1, 2, 2, 3, 4],
+  [1, 3, 5, 7, 9],
+  [1, 3, 5, 7, 9],
+  [1, 3, 5, 7, 9],
+  [1, 3, 5, 7, 2]
+]
 
 // pakai loop
 // munculkan hasil penjumlahan dari array di dalam angka jika angka itu genap
@@ -118,12 +129,12 @@ cars2 = 'toyota+honda+hyundai mercedes bmw kia mazda'
 const split = (string, pemisah) => {
   let arr = []
   let str = ''
-  
-  for(i=0;i<string.length;i++){
-    if(string[i] === pemisah){
-     arr.push(str)
-     str = '' 
-    }else{
+
+  for (i = 0; i < string.length; i++) {
+    if (string[i] === pemisah) {
+      arr.push(str)
+      str = ''
+    } else {
       str += string[i]
     }
   }
@@ -141,9 +152,6 @@ console.log(cars2.split('+'))
 let num1 = 2
 let num2 = 10
 
-num1 = num1+num2
-num2 = num1-num2
-num1 = num1-num2
-
-
-
+num1 = num1 + num2
+num2 = num1 - num2
+num1 = num1 - num2
