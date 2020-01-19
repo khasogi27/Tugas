@@ -1,43 +1,43 @@
 ////////////////////////////////latihan////////////////////////////////////////
 
 // //  masukan sebuah password
-// //  jika huruf pertamanya bukan capital return false
-// //  jika huruf pertama capital return true
+// //  jika huruf pertama capital(password) return true
+// //  jika huruf pertamanya bukan capital(password2) return false
 
-var password = 'Abc' // true
-// var password = 'abc' // false
+// var password = 'Abc' // true
+// var password2 = 'abc' // false
 
-function isFirstCharCapital(string) {  // true false
-    let capital = 'ABCDEFGH'
-    let output = false
+// function isFirstCharCapital(string) { // true false
+//     let capital = 'ABCDEFGH'
+//     let output = false
 
-    for (i=0; i < string.length; i++){
-        for (j=0; j < capital.length; j++){
-            if(string[i] === capital[j]){
-                output = true
-            }
-        }
-    }
-    return output
-}
-console.log(isFirstCharCapital(password))
+//     for (i = 0; i < string.length; i++) {
+//         for (j = 0; j < capital.length; j++) {
+//             if (string[i] === capital[j]) {
+//                 output = true
+//             }
+//         }
+//     }
+//     return output
+// }
+// console.log(isFirstCharCapital(password2))
 
 ////////////////////////////////no.1/////////////////////////////////////////
 
 // Diberikan sebuah function yang menerima dua parameter angka. Function akan me-return nilai true jika secondNumber lebih besar dari firstNumber, dan false jika sebaliknya. Jika kedua angka bernilai sama, function akan me-return -1.
 
 // function compareNumbers(firstNumber, secondNumber) {
-//   let output
-//   if (firstNumber < secondNumber) {
-//     output = true
-//   }
-//   if (firstNumber > secondNumber) {
-//     output = false
-//   }
-//   if (firstNumber == secondNumber) {
-//     output = -1
-//   }
-//   return output
+//     let output
+//     if (firstNumber < secondNumber) {
+//         output = true
+//     }
+//     if (firstNumber > secondNumber) {
+//         output = false
+//     }
+//     if (firstNumber == secondNumber) {
+//         output = -1
+//     }
+//     return output
 // }
 
 // // TEST CASES
@@ -52,13 +52,13 @@ console.log(isFirstCharCapital(password))
 // Buatlah function reverseString melakukan proses pembalikan string!
 
 // function reverseString(string) {
-//   var num2 = ""
-//   for (i = string.length - 1; i > -1; i--) {
-//     if (string[i] !== "") {
-//       num2 += string[i]
+//     var num2 = ""
+//     for (i = string.length - 1; i > -1; i--) {
+//         if (string[i] !== "") {
+//             num2 += string[i]
+//         }
 //     }
-//   }
-//   return num2
+//     return num2
 // }
 
 // // TEST CASES
@@ -75,13 +75,13 @@ console.log(isFirstCharCapital(password))
 // Note: Jika sudah berhasil menyelesaikan masalah ini menggunakan built-in function .sort(), coba juga menggunakan algoritma sortingmu sendiri
 
 // function sortByCharacter(string) {
-//   var num3 = ""
-//   for (j = string.length - 1; j > -1; j--) {
-//     if (string[j] !== "") {
-//       num3 += string[j]
+//     var num3 = ""
+//     for (j = string.length - 1; j > -1; j--) {
+//         if (string[j] !== "") {
+//             num3 += string[j]
+//         }
 //     }
-//   }
-//   return num3
+//     return num3
 // }
 
 // // TEST CASES
@@ -95,24 +95,24 @@ console.log(isFirstCharCapital(password))
 
 // Diberikan sebuah function yang menerima satu parameter berupa array yang terdiri dari angka. Function tersebut akan mengembalikan true jika array dari parameter tersebut merupakan deret aritmatika dan false jika sebaliknya. Deret aritmatika adalah sebuah deret dimana perbedaan setiap angka di deret tersebut konsisten. Contoh, 2, 4, 6, 8 adalah deret aritmatika dengan pertambahan nilai sebesar 2, dan 2, 4, 6, 9 bukanlah deret aritmatika karena tidak perbedaan selisih antar angka yang tidak konsisten.
 
-// function isArithmeticProgression (numbers) {
-//     const selisih = numbers[1] - numbers[0]
+function isArithmeticProgression(numbers) {
+    let selisih = numbers[1] - numbers[0]
 
-//     let isArithmetic = true
+    let isArithmetic = true
 
-//     for(i=0;i<numbers.length-1;i++){ // i =0 sampai i < 6-1   i = 0 sampai 5
-//       if(numbers[i+1] - numbers[i] !== selisih){ // 4
-//         isArithmetic = false
-//       }
-//     }
+    for (i = 0; i < numbers.length - 1; i++) { // i =0 sampai i < 6-1   i = 0 sampai 5
+        if (numbers[i + 1] - numbers[i] !== selisih) { // 4
+            isArithmetic = false
+        }
+    }
 
-//     return isArithmetic
-//   }
+    return isArithmetic
+}
 
 
-//   // TEST CASES
-//   console.log(isArithmeticProgression([1, 2, 3, 4, 5, 6])); // true
-//   console.log(isArithmeticProgression([2, 4, 6, 12, 24])); // false
-//   console.log(isArithmeticProgression([2, 4, 6, 8])); // true
-//   console.log(isArithmeticProgression([2, 6, 18, 54])); // false
-//   console.log(isArithmeticProgression([1, 2, 3, 4, 7, 9])); // false
+// TEST CASES
+console.log(isArithmeticProgression([1, 2, 3, 4, 5, 6])); // true
+console.log(isArithmeticProgression([2, 4, 6, 12, 24])); // false
+console.log(isArithmeticProgression([2, 4, 6, 8])); // true
+console.log(isArithmeticProgression([2, 6, 18, 54])); // false
+console.log(isArithmeticProgression([1, 2, 3, 4, 7, 9])); // false

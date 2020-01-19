@@ -1,20 +1,20 @@
-11// No.1
+// No.1
 
 // var array = []
 
-function perkalianUnik(arr) {
-    for (i = 0; i < arr.length; i++) {
-        var num = 1
-        for (j = 0; j < arr.length; j++) {
-            if (i !== j) {
-                num = num * arr[j]
-            }
-        }
-        array.push(num)
-    }
-    return array
-}
-// // TEST CASES
+// function perkalianUnik(arr) {
+//     for (i = 0; i < arr.length; i++) {
+//         var num = 1
+//         for (j = 0; j < arr.length; j++) {
+//             if (i !== j) {
+//                 num = num * arr[j]
+//             }
+//         }
+//         array.push(num)
+//     }
+//     return array
+// }
+// // // TEST CASES
 // console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]
 // console.log(perkalianUnik([1, 2, 3, 4, 5])); // [120, 60, 40, 30, 24]
 // console.log(perkalianUnik([1, 4, 3, 2, 5])); // [120, 30, 40, 60, 24]

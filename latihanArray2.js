@@ -90,18 +90,18 @@
 // contoh indexOf('BMW', soal2) => -1
 // contoh indexOf(5, [1,2,3,4,5,6]) => 4
 
-const soal2 = ['toyota','honda','hyundai','mazda'] 
-////////////// index 0, index 1, index 2, index 3 
+// const soal2 = ['toyota','honda','hyundai','mazda'] 
+// ////////////// index 0, index 1, index 2, index 3 
 
-function indexOf(data, soal2){ // ini function unduk mencari (indexOf) const soal2
-    for(i=0; i < soal2.length; i++){ // untuk loop dari const coal2 dan mencari panjang soal1 (length)
-        if(soal2[i] === data){ // apakah soal1 index ke i ([i]) samadengan data
-            return i; /// return untuh index i 
-        }
-    }
-    return -1 // return untuk loop
-}
-console.log(indexOf('mazda' , soal2)) // mencampilkan hasil 
+// function indexOf(data, soal2){ // ini function unduk mencari (indexOf) const soal2
+//     for(i=0; i < soal2.length; i++){ // untuk loop dari const coal2 dan mencari panjang soal1 (length)
+//         if(soal2[i] === data){ // apakah soal1 index ke i ([i]) samadengan data
+//             return i; /// return untuh index i 
+//         }
+//     }
+//     return -1 // return untuk loop
+// }
+// console.log(indexOf('mazda' , soal2)) // mencampilkan hasil 
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -111,20 +111,20 @@ console.log(indexOf('mazda' , soal2)) // mencampilkan hasil
 // includeAlphabet(password) // outputnya akan true
 // includeAlphabet(pin) // outputnya akan false
 
-// const password = 'test123'
-// const pin = '1234567'
+const password = 'test123'
+const pin = '1234567'
 
-// function includeAlphabet(string) {
-//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-//     let output = false
+function includeAlphabet(string) {
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    let output = false
 
-//     for (i = 0; i < String.length; i++) {
-//         for (j = 0; j < alphabet.length; j++) {
-//             if (string[i] === includeAlphabet[j]) {
-//                 output = false
-//             }
-//         }
-//         return output
-//     }
-// }
-// console.log(includeAlphabet(password))
+    for (i = 0; i < string.length; i++) {
+        for (j = 0; j < alphabet.length; j++) {
+            if (string[i] === alphabet[j]) {
+                output = true
+            }
+        }
+        return output
+    }
+}
+console.log(includeAlphabet(pin))

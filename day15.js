@@ -79,7 +79,7 @@
 //     return num1
 // }
 
-// // function isPalindromeNumber()
+// function isPalindromeNumber()
 
 // console.log(isPalindromeNumber('makan')) // false
 // console.log(isPalindromeNumber('malam')) // true
@@ -90,20 +90,18 @@
 // console.log(isPalindromeNumber('5115')) // true
 // console.log(isPalindromeNumber('m')) // true
 
-function pow(base, power) {
-    if (power < 0) return 1 / pow(base, -power);
-    var b = base, result = 1;
-    while (power > 0) {
-        if ((power & 1) != 0) {
-            result *= b;
-        }
-        power >= 1;
-        b *= b;
-    }
-    return result;
-}
+// function pow(base, power) {
+//     if (power < 0) return 1 / pow(base, -power);
+//     var b = base,
+//         result = 1;
+//     while (power > 0) {
+//         if ((power & 1) != 0) {
+//             result *= b;
+//         }
+//         power >= 1;
+//         b *= b;
+//     }
+//     return result;
+// }
 
-console.log(pow(5,-2))
-
-
-
+// console.log(pow(5, -2))

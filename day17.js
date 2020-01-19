@@ -53,30 +53,30 @@
 
 
 // soal no 3
-// function complexConversion(text) {
-//   let arr = []
-//   let arr2 = []
-//   let object = {}
-//   arr = text.split(',')
-//   for (i = 0; i < arr.length; i++) {
-//     arr2 = arr.split(':')
-//     let key = arr2[0]
-//     let value = arr2[1]
-//     object[key] = value
-//   }
-//   return object
-// }
+function complexConversion(text) {
+  let arr = []
+  let arr2 = []
+  let object = {}
+  arr = text.split(',')
+  for (i = 0; i < arr.length; i++) {
+    arr2 = arr[i].split(':')
+    let key = arr2[0]
+    let value = arr2[1]
+    object[key] = value
+  }
+  return object
+}
 
 
 // // TEST CASES
-// console.log(complexConversion('name:Dimitri,email:dimitri@mail.com'));
-// // { name: 'Dimitri', email: 'dimitri@mail.com' }
+console.log(complexConversion('name:Dimitri,email:dimitri@mail.com'));
+// { name: 'Dimitri', email: 'dimitri@mail.com' }
 
-// console.log(complexConversion('name:Erwin,gender:male,age:21'));
-// // { name: 'Erwin', gender: 'male', age: '21' }
+console.log(complexConversion('name:Erwin,gender:male,age:21'));
+// { name: 'Erwin', gender: 'male', age: '21' }
 
-// console.log(complexConversion('city:Surabaya,province:East Java'));
-// // { city: 'Surabaya', province: 'East Java' }
+console.log(complexConversion('city:Surabaya,province:East Java'));
+// { city: 'Surabaya', province: 'East Java' }
 
 console.log('<=================== 3. ==================>');
 
