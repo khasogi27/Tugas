@@ -7,7 +7,7 @@
 //         var num = 1
 //         for (j = 0; j < arr.length; j++) {
 //             if (i !== j) {
-//                 num = num * arr[j]
+//                 num *= arr[j]
 //             }
 //         }
 //         array.push(num)
@@ -26,10 +26,10 @@
 
 function numberProcessing(numberArr) {
     let terkecil = [0];
-    let terbesar = [10]; 
+    let terbesar = [10];
     let ganjil = []
     let genap = []
-    
+
     for (let i = 0; i < numberArr.length; i++) {
         if (numberArr[i] < terkecil) { // mencari nilai terkecil
             terkecil.push(numberArr[i]);
@@ -47,7 +47,13 @@ function numberProcessing(numberArr) {
     let rata = numberArr.reduce((j, k) => { // mencari nilai rata-rata
         return j + k
     }, 0) / numberArr.length
-    return {terkecil,terbesar,ganjil,genap,rata}
+    return {
+        terkecil,
+        terbesar,
+        ganjil,
+        genap,
+        rata
+    }
 }
 console.log(numberProcessing([1, 3, 5, 1, 2, 8, 10, 0, 3]));
 // "Min: 0, Max: 10, Mean: 4, Odds: 1-3-5-1-3, Evens: 2-8-10-0"

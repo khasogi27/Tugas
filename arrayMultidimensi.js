@@ -6,7 +6,7 @@ var password = 'test w';
 function removeSpace(password) {
     var string = ""
     for (i = 0; i < password.length; i++) {
-        if (password[i] !== " ") {
+        if (password[i] != " ") {
             string += password[i]
         }
 
@@ -19,6 +19,7 @@ console.log(noSpace); // testw
 function reverseText(noSpace) {
     var string = ""
     for (i = noSpace.length - 1; i > -1; i--) {
+        
         string += noSpace[i]
     }
     return string
@@ -54,7 +55,6 @@ function updateVowels(reversed) {
         if (flag == false) {
             string += reversed[i]
         }
-        // console.log(reversed[i])
     }
     return string
 }

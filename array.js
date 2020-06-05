@@ -123,7 +123,7 @@
 //soal 3
 
 let cars = 'toyota honda hyundai mercedes bmw kia mazda'
-cars2 = 'toyota+honda+hyundai mercedes bmw kia mazda'
+cars2 = 'toyota+honda+hyundai+mercedes+bmw+kia+mazda'
 
 
 const split = (string, pemisah) => {
